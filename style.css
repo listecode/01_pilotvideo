@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+video {
+  /* max-width: 450px; */
+  border-radius: 6px;
+  border: 2px solid brown;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+iframe {
+  /* border: 2px solid brown;
+  border-radius: 6px;
+  max-width: 450px; */
+
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+h1 {
+  font-family: "league_gothic";
+  font-size: 40px;
+  color: black;
+  transition: 1s;
+}
+.dark h1 {
+  color: black;
+  transition: 1s;
+}
+.layouttext {
+  color: black;
+}
+
+.layoutover .layouttext {
+  margin: 20px;
+}
+
+.dark .layoutover .layouttext {
+  color: white;
+  transition: 1s;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: brown;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.beskrivelse p {
+  font-size: 18px;
+}
+footer p {
+  text-align: center;
+  color: black;
+}
+.dark .layouttext {
+  color: black;
+}
+
+.dark footer p {
+  color: white;
+}
+
+.titel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+.fav {
+  width: 80px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+img {
+  max-width: 450px;
+  border-radius: 6px;
+}
+
+.billedogtext {
+  padding-top: 45px;
+  padding-left: 25px;
+}
+.beskrivelse {
+  padding: 10px;
+}
+.beskrivelse .presume {
+  margin: 20px;
+}
+.beskrivelse h2 {
+  margin: 20px;
+}
+.billedeogtext img {
+  margin: 10px;
+}
+.billeder {
+  margin: 0 auto;
+}
+.billeder img {
+  border: 2px solid brown;
+}
+p {
+  color: white;
+}
+
+.resume img {
+  width: 350px;
+}
+
+.presume {
+  color: black;
+}
+.pilned {
+  width: 50px;
+  padding: 10px;
+}
+.hvidpil {
+  width: 50px;
+  padding: 10px;
+}
+.pil {
+  display: flex;
+  justify-content: center;
+}
+.pil .dark {
+  color: white;
+}
+.pileop {
+  display: flex;
+  justify-content: center;
+}
+
+.imagetext {
+  position: absolute;
+  top: 72%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-family: "league_gothic";
+}
+.resume {
+  gap: 20px;
+  background-color: brown;
+  border-radius: 6px;
+  text-align: center;
+}
+#video1 {
+  scroll-behavior: smooth;
+  transition: 1s;
+}
+
+.layoutover {
+  display: flex;
+  justify-content: center;
+}
+
+.layoutbillede {
+  display: flex;
+  justify-content: center;
+}
+.layoutbillede img {
+  border: 2px solid brown;
+}
+/* biograf tilstands knappen */
+body {
+  background-color: white;
+  transition: 1s;
+}
+body.dark {
+  background-color: black;
+  transition: 1s;
+}
+.mode {
+  background: black;
+  color: white;
+  transition: 1s ease-in-out;
+  border-radius: 25px;
+  width: 100px;
+  cursor: pointer;
+  outline: none;
+  border: 5px solid brown;
+}
+
+.dark .mode {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+  outline: none;
+  border: 5px solid brown;
+}
+
+.mode:hover {
+  color: brown;
+}
+
+/* fonts */
+@font-face {
+  font-family: "league_gothic";
+  src: url(leaguegothic-regular-variablefont_wdth-webfont.woff2);
+}
