@@ -45,14 +45,15 @@
     border-radius: 6px;
     max-width: 800px;
   } */
-  figure figcaption {
-    place-self: end center;
-  }
+
   /* figure {
     display: grid;
     grid-template-columns: 1fr 1fr;
   } */
 
+  figure figcaption {
+    place-self: end center;
+  }
   figure > * {
     grid-area: 1/1;
   }
@@ -64,7 +65,5 @@
 
   .kleinert {
     border: 2px solid brown;
-  }
-  .resume {
   }
 }
