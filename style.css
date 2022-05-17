@@ -59,6 +59,9 @@ header {
 .beskrivelse p {
   font-size: 18px;
 }
+.beskrivelse h1 {
+  padding-top: 40px;
+}
 footer p {
   text-align: center;
   color: black;
@@ -88,14 +91,8 @@ main {
   margin: 0 auto;
 }
 img {
-  max-width: 450px;
+  max-width: 100%;
   border-radius: 6px;
-}
-
-.billedogtext {
-  padding-top: 45px;
-  padding-left: 25px;
-  margin-bottom: 50px;
 }
 
 .beskrivelse {
@@ -111,7 +108,7 @@ img {
   margin: 10px;
 }
 .billeder {
-  margin: 0 auto;
+  max-width: 100%;
 }
 .billeder img {
   border: 2px solid brown;
@@ -126,6 +123,7 @@ p {
 
 .presume {
   color: black;
+  text-align: left;
 }
 .pilned {
   width: 50px;
@@ -147,15 +145,6 @@ p {
   justify-content: center;
 }
 
-.imagetext {
-  position: absolute;
-  top: 72%;
-  left: 52%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 36px;
-  font-family: "league_gothic";
-}
 .resume {
   gap: 20px;
   background-color: brown;
@@ -216,4 +205,32 @@ body.dark {
 @font-face {
   font-family: "league_gothic";
   src: url(leaguegothic-regular-variablefont_wdth-webfont.woff2);
+}
+
+/* figcaption {
+  place-self: end center;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 36px;
+  font-family: "league_gothic";
+  padding: 30px; */
+
+figure figcaption {
+  color: white;
+  font-size: 36px;
+  place-self: end center;
+  padding: 50px;
+  font-family: "league_gothic";
+}
+figure {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+figure > * {
+  grid-area: 1/1;
 }

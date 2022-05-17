@@ -8,16 +8,15 @@ button.addEventListener("click", darkMode);
 
 function darkMode() {
   body.classList.toggle("dark");
-
-  if (body.classList.contains(dark)) {
-    button.textContent = "Lys Tilstand";
+  if (button.innerHTML == "Biograf Tilstand") {
+    button.innerHTML = "Lys Tilstand";
   } else {
-    button.textContent = "Biograf Tilstand";
+    button.innerHTML = "Biograf Tilstand";
   }
 }
 
-// if (button.innerHTML == "Biograf Tilstand") {
-//   button.innerHTML = "Lys Tilstand";
+// if (body.classList.contains(dark)) {
+//   button.textContent = "Lys Tilstand";
 // } else {
-//   button.innerHTML = "Biograf Tilstand";
+//   button.textContent = "Biograf Tilstand";
 // }
